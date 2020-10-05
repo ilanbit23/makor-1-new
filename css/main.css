@@ -62,7 +62,6 @@ body {
 
 .bg .like-news {
     color: white;
-    font-family: sans-serif;
 }
 
 input {
@@ -513,11 +512,25 @@ input {
         margin: -60px auto 0 auto;
     }
     .news {
-        width: 404px;
-        padding-top: 175px;
+        width: unset;
+        padding-top: 147px;
+    }
+    .bg .like-news {
+        margin-right: 15px;
+        font-size: 0.8em;
     }
     .mobile-txt1.txt1 {
-        left: 30px;
-        top: 148px;
+        max-width: 70px;
+        left: 17px;
+        top: 122px;
+    }
+    .txt4 {
+        padding: 5px 5px 5px 20px;
+    }
+    .social {
+        top: 67%;
+    }
+    .logo {
+        bottom: 90px;
     }
 }
