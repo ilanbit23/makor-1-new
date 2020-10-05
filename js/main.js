@@ -62,7 +62,7 @@ function generate(event) {
     output.style.display = 'block';
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
-    //document.querySelector('.output-title').style.paddingTop = '165px';
+    document.querySelector('.output-title').style.paddingTop = '165px';
     html2canvas(document.querySelector(".output"), {
         scale: 1,
         // windowWidth: 730,
