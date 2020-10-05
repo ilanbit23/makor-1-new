@@ -49,7 +49,6 @@ function generate(event) {
     replaceTxt('lastLetter');
 
     document.querySelector('.txt1').innerText = txt1;
-    document.querySelector('.mobile-txt1.txt1').innerText = txt1;
     document.querySelector('.txt2').innerHTML = txt2;
     document.querySelector('.txt3').innerHTML = txt3;
     document.querySelector('.txt4').innerHTML = txt4;
@@ -63,14 +62,14 @@ function generate(event) {
     output.style.display = 'block';
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
-    document.querySelector('.output-title').style.paddingTop = '165px';
+    //document.querySelector('.output-title').style.paddingTop = '165px';
     html2canvas(document.querySelector(".output"), {
         scale: 1,
         // windowWidth: 730,
         // windowHeight: 620
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
-        document.querySelector('.output-title').style.paddingTop = '135px';
+        //document.querySelector('.output-title').style.paddingTop = '135px';
 
         canvas.style.display = "none";
         document.querySelector('.social').style.display = 'flex';
