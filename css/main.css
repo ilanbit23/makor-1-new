@@ -105,9 +105,11 @@ input {
     display: flex;
     width: 530px;
     margin: auto;
-    position: absolute;
+    padding-top: 170px;
+    padding-right: 23px;
+    /* position: absolute;
     top: 170px;
-    right: 100px;
+    right: 100px; */
 }
 
 .right-side {
@@ -132,8 +134,8 @@ input {
     grid-gap: 5px;
     direction: ltr;
     width: 530px;
-    padding-top: 215px;
-    padding-right: 30px;
+    padding-top: 5px;
+    padding-right: 23px;
     margin: auto;
 }
 
@@ -381,9 +383,25 @@ input {
     }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (min-width: 1200px) {
+    .canvas-container .output {
+        max-width: 850px;
+    }
+    .output-title {
+        width: 600px;
+        padding-top: 135px;
+    }
+    .right-side {
+        min-width: 490px;
+    }
+    .news {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
     .content {
-        margin: -60px auto 0 auto;
+        margin: -80px auto 0 auto;
     }
 }
 
@@ -396,26 +414,8 @@ input {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 440px) {
     .content {
-        margin: -80px auto 0 auto;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .canvas-container .output {
-        max-width: 850px;
-    }
-    .output-title {
-        width: 600px;
-        top: 135px;
-        right: 140px;
-    }
-    .right-side {
-        min-width: 490px;
-    }
-    .news {
-        width: 600px;
-        padding-top: 180px;
+        margin: -60px auto 0 auto;
     }
 }
