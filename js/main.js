@@ -63,47 +63,20 @@ function generate(event) {
     var news = document.querySelector(".news");
     output.style.display = 'block';
     news.style.letterSpacing = '0.2px';
-
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    if (windowWidth > 768) {
-        outputTitle.style.paddingTop = '165px'
-        outputTitle.style.width = '600px'
-        news.style.maxWidth = '530px';
-    }
-    if (windowWidth < 768) {
-        outputTitle.style.paddingTop = '185px'
-        outputTitle.style.width = '530px'
-        news.style.maxWidth = '530px';
-    }
-    if (windowWidth < 640) {
-        output.style.maxWidth = '440px'
-    }
-    if (windowWidth < 440) {
-        outputTitle.style.paddingTop = '150px'
-        news.style.maxWidth = '440px';
-    }
-    if (windowWidth < 360) {
-        output.style.maxWidth = 'unset'
-    }
+    if (windowWidth > 768) { outputTitle.style.paddingTop = '165px' }
+    if (windowWidth < 768) { outputTitle.style.paddingTop = '185px' }
+    if (windowWidth < 440) { outputTitle.style.paddingTop = '150px' }
     html2canvas(document.querySelector(".output"), {
         scale: 1,
-        removeContainer: true,
-        useCORS: true,
         // windowWidth: 730,
         // windowHeight: 620
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
-        //document.querySelector('.output-title').style.paddingTop = '135px';
-
         canvas.style.display = "none";
         document.querySelector('.social').style.display = 'flex';
         document.querySelector('.logo').style.display = 'block';
-        if (windowWidth > 768) {
-            outputTitle.style.paddingTop = '165px'
-            outputTitle.style.width = '600px'
-            news.style.maxWidth = '600px';
-        }
     });
 
 }
@@ -121,6 +94,6 @@ function replaceTxt(prop) {
 
 function downloadImg(elLink) {
     const elCanvas = document.querySelector('canvas');
-    var imgContent = elCanvas.toDataURL('image/png', 1.0);
+    var imgContent = elCanvas.toDataURL('image/jpeg', 1.0);
     elLink.href = imgContent;
 }
