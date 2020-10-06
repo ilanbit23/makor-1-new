@@ -97,6 +97,6 @@ function replaceTxt(prop) {
 
 function downloadImg(elLink) {
     const elCanvas = document.querySelector('canvas');
-    var imgContent = elCanvas.toDataURL('image/jpeg', 1.0);
+    var imgContent = elCanvas.toDataURL('image/png', 1.0);
     elLink.href = imgContent;
 }
