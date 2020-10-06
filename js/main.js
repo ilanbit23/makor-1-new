@@ -55,23 +55,17 @@ function generate(event) {
     document.querySelector('.txt5').innerHTML = txt5;
     document.querySelector('.txt6').innerHTML = txt6;
 
-    var windowWidth = window.innerWidth;
     document.getElementById("bg").remove();
     document.querySelector('.html-background').style.background = 'none';
     var output = document.getElementById("output");
-    var outputTitle = document.querySelector(".output-title");
     var news = document.querySelector(".news");
     output.style.display = 'block';
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    // if (windowWidth > 768) { outputTitle.style.paddingTop = '165px' }
-    // if (windowWidth < 768) { outputTitle.style.paddingTop = '185px' }
-    // if (windowWidth < 440) { outputTitle.style.paddingTop = '150px' }
+    window.scrollTo(0, 0);
     html2canvas(document.querySelector(".output"), {
         scale: 1,
-        // windowWidth: 730,
-        // windowHeight: 620
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
         //canvas.style.display = "none";
