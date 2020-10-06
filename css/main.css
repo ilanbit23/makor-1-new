@@ -1,4 +1,4 @@
-html {
+    html {
     background: url(../img/desktop/back-top.jpg) no-repeat center center fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -304,6 +304,10 @@ input {
     right: calc(50% - 30px);
 }
 
+.logo img {
+    max-width: 70px;
+}
+
 @media only screen and (max-width: 768px) {
     html {
         background: none;
@@ -537,17 +541,12 @@ input {
         bottom: 0px;
         right: 17%;
     }
-    .logo img {
-        max-width: 70px;
+    @media only screen and (max-width: 360px) {
+        .right-side {
+            min-width: 260px;
+        }
+        .output-title {
+            width: unset;
+            padding: 130px 0 5px 0;
+        }
     }
-}
-
-@media only screen and (max-width: 360px) {
-    .right-side {
-        min-width: 260px;
-    }
-    .output-title {
-        width: unset;
-        padding: 130px 0 5px 0;
-    }
-}
