@@ -74,7 +74,7 @@ function generate(event) {
         // windowHeight: 620
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
-        canvas.style.display = "none";
+        //canvas.style.display = "none";
         document.querySelector('.social').style.display = 'flex';
         document.querySelector('.logo').style.display = 'block';
     });
