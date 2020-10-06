@@ -63,7 +63,7 @@ function generate(event) {
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    window.scrollTo(0, 0);
+    window.scrollTo(-50, 0);
     html2canvas(document.querySelector(".output"), {
         scale: 1,
     }).then(canvas => {
