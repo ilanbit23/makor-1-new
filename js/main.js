@@ -65,9 +65,9 @@ function generate(event) {
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    if (windowWidth > 768) { outputTitle.style.paddingTop = '165px' }
-    if (windowWidth < 768) { outputTitle.style.paddingTop = '185px' }
-    if (windowWidth < 440) { outputTitle.style.paddingTop = '150px' }
+    // if (windowWidth > 768) { outputTitle.style.paddingTop = '165px' }
+    // if (windowWidth < 768) { outputTitle.style.paddingTop = '185px' }
+    // if (windowWidth < 440) { outputTitle.style.paddingTop = '150px' }
     html2canvas(document.querySelector(".output"), {
         scale: 1,
         // windowWidth: 730,
