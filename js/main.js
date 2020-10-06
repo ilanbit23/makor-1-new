@@ -70,8 +70,10 @@ function generate(event) {
     if (windowWidth < 440) { outputTitle.style.paddingTop = '150px' }
     html2canvas(document.querySelector(".output"), {
         scale: 1,
-        // windowWidth: 730,
-        // windowHeight: 620
+        removeContainer: true,
+        useCORS: true
+            // windowWidth: 730,
+            // windowHeight: 620
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
         //document.querySelector('.output-title').style.paddingTop = '135px';
