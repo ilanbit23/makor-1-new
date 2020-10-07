@@ -63,12 +63,12 @@ function generate(event) {
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    window.scrollTo(-350, 0);
+    window.scrollTo(-400, 0);
     html2canvas(document.querySelector(".output"), {
         scale: 1,
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
-        canvas.style.display = "none";
+        //canvas.style.display = "none";
         document.querySelector('.social').style.display = 'flex';
         document.querySelector('.logo').style.display = 'block';
     });
