@@ -68,7 +68,7 @@ function generate(event) {
         scale: 1,
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
-        //canvas.style.display = "none";
+        canvas.style.display = "none";
         document.querySelector('.social').style.display = 'flex';
         document.querySelector('.logo').style.display = 'block';
     });
