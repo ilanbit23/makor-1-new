@@ -1,5 +1,5 @@
 var txt1 = `יוצא לאור בcity <br/>
-עורך ראשי: firstName reporterFamilyName`
+עורך ראשי firstName \xa0 reporterFamilyName`
 
 var txt2 = `נבחרת ישראל
 בhobby
