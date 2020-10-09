@@ -1,21 +1,20 @@
-var txt1 = `יוצא לאור בcity
-עורך ראשי: firstName reporterFamilyName 
-`
+var txt1 = `יוצא לאור בcity <br/>
+עורך ראשי: firstName reporterFamilyName`
+
 var txt2 = `נבחרת ישראל
 בhobby
 העפילה לשלב
 הגמר שייערך
 בעוד שנה
-<span>עמוד 5</span>
-`
+<span>עמוד 5</span>`
+
 var txt3 = `משרד התחבורה
 הודיע כי מעתה
 בשעות הבוקר
 המוקדמות,
 כל הרמזורים
 יהיו בצבע
-favoriteColor מעושן | <span>עמוד 7</span>
-`
+favoriteColor מעושן | <span>עמוד 7</span>`
 
 var txt4 = `בניסוי שהתקיים
 בחודש האחרון
@@ -48,7 +47,7 @@ function generate(event) {
     replaceTxt('favoriteColor');
     replaceTxt('lastLetter');
 
-    document.querySelector('.txt1').innerText = txt1;
+    document.querySelector('.txt1').innerHTML = txt1;
     document.querySelector('.txt2').innerHTML = txt2;
     document.querySelector('.txt3').innerHTML = txt3;
     document.querySelector('.txt4').innerHTML = txt4;
@@ -63,7 +62,7 @@ function generate(event) {
     news.style.letterSpacing = '0.2px';
     document.querySelector('.social').style.display = 'none';
     document.querySelector('.logo').style.display = 'none';
-    window.scrollTo(-500, 0);
+    window.scrollTo(-550, 0);
     html2canvas(document.querySelector(".output"), {
         scale: 1,
     }).then(canvas => {
