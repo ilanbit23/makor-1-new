@@ -540,13 +540,14 @@
             padding: 5px 5px 5px 20px;
         }
         .social {
-            top: 75%;
-            right: 10%;
+            top: 70%;
+            left: calc(50% - 60px);
+            /* right: 10%; */
             margin-top: 30px;
         }
         .logo {
-            bottom: 0px;
-            right: 17%;
+            bottom: 7%;
+            /* right: 17%; */
         }
     }
     
